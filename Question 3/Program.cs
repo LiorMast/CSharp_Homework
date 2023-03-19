@@ -28,11 +28,50 @@ namespace Question_3
                                 count++;
                             }
                     }
+            arr2 = resize2dArray(arr2, count, 3);
             print2dArr(arr2);
-            //comment
         }
 
         static void print2dArr(int[,] arr)
+        {
+            int count = 0;
+            foreach (int i in arr)
+            {
+                Console.Write($"{i}\t");
+                count++;
+                if (count == 3)
+                {
+                    Console.WriteLine("");
+                    count = 0;
+                }
+            }
+        }
+
+        static int[,] resize2dArray(int[,] arr, int row, int col)
+        {
+            int[,] newarr = new int[row, col];
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    newarr[i, j] = arr[i, j];
+                }
+            }
+            return newarr;
+        }
+        static void print2dArr_1(int[,] arr)
+        {
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    Console.Write($"{arr[i, j]}\t");
+                }
+                Console.WriteLine("");
+            }
+        }
+
+        static void prtarr(int[,] arr)
         {
             int count = 0;
             foreach (int i in arr)
