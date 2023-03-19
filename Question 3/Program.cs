@@ -10,7 +10,7 @@ namespace Question_3
     {
         static void Main(string[] args)
         {
-            int[] arr = {-1,0,1,2,-1,4,-3 };
+            int[] arr = { -1, 0, 1, 2, -1, 4, -3 };
 
             int[,] arr2 = new int[arr.Length* arr.Length* arr.Length, 3];
             int count = 0;
@@ -39,7 +39,7 @@ namespace Question_3
             {
                 Console.Write($"{i}\t");
                 count++;
-                if (count == 3)
+                if (count == arr.GetLength(1))
                 {
                     Console.WriteLine("");
                     count = 0;
