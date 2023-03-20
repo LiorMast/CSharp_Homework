@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C__Homework
 {
-    internal class Program
+    internal class Q2
     {
         static void Main(string[] args)
         {
