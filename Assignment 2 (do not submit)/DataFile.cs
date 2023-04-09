@@ -28,9 +28,13 @@ namespace Assignment_2__do_not_submit_
         /////////////////////GETTERS-SETTERS/////////////////////
         public string GetData() => this.data;
 
-        public void SetData(string data) => this.data = data;
+        public void SetData(string data)
+        {
+            this.data = data;
+            SetTime();
+        }
 
-        public string GetFileName() => this.fileName;
+            public string GetFileName() => this.fileName;
 
         private bool IsValidName(string name)
         {
@@ -51,7 +55,9 @@ namespace Assignment_2__do_not_submit_
                 Console.Write("a file name can't be empty or contain any of the following characters: \\/:*?\"<>|\nPlease Enter a file name: ");
                 name = Console.ReadLine();
             }
-                this.fileName = name;
+            this.fileName = name;
+            SetTime();
+        
         }
 
         public void SetTime() => lastUpdateTime = DateTime.Now;
@@ -61,14 +67,6 @@ namespace Assignment_2__do_not_submit_
         private int GetSize() => this.data.Length;
 
         /////////////////////METHODS/////////////////////
-
-        /*public void PrintFileInfo()
-        {
-            Console.WriteLine(this.GetFileName());
-            Console.WriteLine(this.GetData());
-            Console.WriteLine(this.GetTime());
-            Console.WriteLine(this.GetSize());
-        }*/
 
         private double SizeInKB() => this.GetSize() / 1024.0;
 
