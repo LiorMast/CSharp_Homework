@@ -62,12 +62,19 @@ namespace Assignment_2__do_not_submit_
 
         /////////////////////METHODS/////////////////////
 
-        public void PrintFileInfo()
+        /*public void PrintFileInfo()
         {
             Console.WriteLine(this.GetFileName());
             Console.WriteLine(this.GetData());
             Console.WriteLine(this.GetTime());
             Console.WriteLine(this.GetSize());
+        }*/
+
+        private double SizeInKB() => this.GetSize() / 1024.0;
+
+        public void Dir()
+        {
+            Console.WriteLine($"{this.GetTime()} {Math.Round(this.SizeInKB(), 2)} KB {this.GetFileName()}");
         }
     }
 }

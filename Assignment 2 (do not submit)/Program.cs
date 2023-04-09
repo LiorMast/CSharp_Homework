@@ -10,11 +10,17 @@ namespace Assignment_2__do_not_submit_
     {
         static void Main(string[] args)
         {
-            DataFile f1 = new DataFile("", "Hello World!");
-            f1.PrintFileInfo();
-            DataFile f2 = new DataFile(f1);
-            f2.PrintFileInfo();
+            DataFile f1 = new DataFile();
+            DataFile f2 = new DataFile("test.txt", "Hello World!");
+            
+            f1.Dir();
+            f2.Dir();
 
+            f1.SetFileName("Myfile.txt");
+            f1.SetData("This is a text file");
+            f1.SetTime();
+
+            f1.Dir();
         }
     }
 }
