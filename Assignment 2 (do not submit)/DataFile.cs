@@ -26,20 +26,11 @@ namespace Assignment_2__do_not_submit_
         public DataFile(DataFile origin) : this(origin.fileName + " - Copy", origin.data) { }
 
         /////////////////////GETTERS-SETTERS/////////////////////
-        public string GetData()
-        {
-            return this.data;
-        }
+        public string GetData() => this.data;
 
-        public void SetData(string data)
-        {
-            this.data = data;
-        }
+        public void SetData(string data) => this.data = data;
 
-        public string GetFileName()
-        {
-            return this.fileName;
-        }
+        public string GetFileName() => this.fileName;
 
         private bool IsValidName(string name)
         {
@@ -63,20 +54,11 @@ namespace Assignment_2__do_not_submit_
                 this.fileName = name;
         }
 
-        public void SetTime()
-        {
-            // current date/time based on current system
-            lastUpdateTime = DateTime.Now;
-        }
-        public DateTime GetTime()
-        {
-            return lastUpdateTime;
-        }
+        public void SetTime() => lastUpdateTime = DateTime.Now;
 
-        private int GetSize()
-        {
-            return this.GetData().Length;
-        }
+        public DateTime GetTime() => lastUpdateTime;
+
+        private int GetSize() => this.data.Length;
 
         /////////////////////METHODS/////////////////////
 
