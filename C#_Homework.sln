@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question 3", "Question 3\Qu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "temp", "temp\temp.csproj", "{1B9DA701-A261-4FCE-9548-DAA1D91889B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 2 (do not submit)", "Assignment 2 (do not submit)\Assignment 2 (do not submit).csproj", "{05704C48-E9FA-483E-B964-830DF797E32F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 2", "Assignment 2 (do not submit)\Assignment 2.csproj", "{05704C48-E9FA-483E-B964-830DF797E32F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment 2 Alon", "..\LiorMast\CSharp_Homework\Assignment 2 Alon\Assignment 2 Alon.csproj", "{F9C36433-16AE-4140-A485-2D664CEA9D92}"
 EndProject

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment_2__do_not_submit_
+namespace Assignment_2
 {
     internal class Program
     {
